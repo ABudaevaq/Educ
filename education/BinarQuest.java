@@ -1,3 +1,7 @@
+import org.testng.annotations.Test;
+
+import java.util.Arrays;
+
 public class BinarQuest {
 
     public static void main(String[] args) {
@@ -23,4 +27,14 @@ public class BinarQuest {
         }
         return index;
     }
+
+    @Test
+    public void binaryQestTest() {
+        int[] ar = {0, 2, 5, 8, 11, 16};
+        int fi = 3;
+
+        System.out.printf("Какой номер должен быть - %s \n", fi);
+        System.out.printf("Номер элемента = %s ", binaryQuest(ar, 5, 0, ar.length -1));
+    }
+
 }
